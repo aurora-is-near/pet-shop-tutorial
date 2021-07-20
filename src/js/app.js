@@ -104,7 +104,7 @@ App = {
         adoptionInstance = instance;
 
         // Execute adopt as a transaction by sending account
-        return adoptionInstance.adopt(petId, {from: account});
+        return adoptionInstance.adopt(petId, {from: account, gas: 210000});
       }).then(function(result) {
         return App.markAdopted();
       }).catch(function(err) {

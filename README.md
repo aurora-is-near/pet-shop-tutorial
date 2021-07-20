@@ -57,7 +57,7 @@ NMEMORIC='YOUR NMEMORIC HERE'
 ```
 
 ```bash
-set -a # exports all the env vars
+source .env && set -a # exports all the env vars
 ```
 
 ### Deploy Adoption contract on Ropsten testnet
@@ -67,9 +67,6 @@ The following command will deploy an Adoption contract on Aurora.
 yarn deploy:aurora
 ```
 
-The Adoption contract address is `0xbC5502C0606a815aaE39c93618010B7560752933`
-
-
 ### Start DApp Server
 In a new ternminal, run the `liteserver` development server. It serves the front-end on http://localhost:3000
 
@@ -77,7 +74,9 @@ In a new ternminal, run the `liteserver` development server. It serves the front
 yarn dev
 ```
 
-#### Connect Metamask to Aurora testnet
+
+the server will automatically detect the Adtoption contract artifacts and the address.
+### Connect Metamask to Aurora testnet
 
 Use the following connection details to add Aurora as a custom network.
 
