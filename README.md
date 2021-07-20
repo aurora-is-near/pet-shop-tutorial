@@ -40,8 +40,8 @@ To run the workshop code, you should go through the following steps:
 First fork the repository and then Git Clone your fork to your computer and install dependencies
 
 ```bash
-$ git clone https://github.com/aurora-is-near/workshops.git
-$ cd workshops/02-pet-shop-dapp/
+$ git clone https://github.com/aurora-is-near/pet-shop-tutorial.git
+$ cd pet-shop-tutorial
 $ yarn
 ```
 
