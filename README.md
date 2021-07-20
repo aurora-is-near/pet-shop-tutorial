@@ -31,7 +31,7 @@ Expected `.env` file in the project root:
 - `INFURA_TOKEN`: The infura api key for Ropsten testnet
 - `NMEMORIC`: Ethereum NMEMORIC 
 
-Use this [iancoleman.io/bip39/](https://iancoleman.io/bip39/) to generate `NMEMORIC` on the fly and replace this [address](https://github.com/aurora-is-near/pet-shop-tutorial/blob/d421efdb545e0fc1859a72cae90c3d96edb19079/truffle-config.js#L36) with one of the addresses that has been generated from the new NMEMORIC.
+Use this [iancoleman.io/bip39/](https://iancoleman.io/bip39/) to generate `NMEMORIC` on the fly.
 
 ## Run
 
@@ -119,6 +119,8 @@ By clicking on `Adopt` button for any pet available for adopting:
 The DApp will redirect the request to `Adoption` contract on Aurora testnet using Metamask. 
 
 ![](./imgs/mm-adopt2.png)
+
+Make sure to set the value of `Gas Price` to at least `1` and the gas limit to at least `210000`.
 
 Click `Confirm`
 
